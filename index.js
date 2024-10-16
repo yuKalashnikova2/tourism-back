@@ -24,10 +24,9 @@ const transporter = nodemailer.createTransport({
 
 app.post('/', async (req, res) => {
     const { name, email, phone } = req.body
-    console.log('проверка', req.body)
     const mail = {
         from: 'zdorovye.turizm@bk.ru',
-        to: 'malostalomne1@mail.ru',
+        to: 'eypahmetuygun@yandex.ru',
         subject: 'Запись на консультацию с сайта zdorovyeiturizm.ru',
         text: `Имя: ${name} \nEmail: ${email} \nТелефон: ${phone}`,
     }
