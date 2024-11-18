@@ -26,7 +26,7 @@ app.post('/', async (req, res) => {
     const { name, email, phone } = req.body
     const mail = {
         from: 'zdorovye.turizm@bk.ru',
-        to: 'eypahmetuygun@yandex.ru',
+        to: ['eypahmetuygun@yandex.ru', 'zdorovye.turizm@mail.ru'],
         subject: 'Запись на консультацию с сайта zdorovyeiturizm.ru',
         text: `Имя: ${name} \nEmail: ${email} \nТелефон: ${phone}`,
     }
